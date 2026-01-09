@@ -7,7 +7,7 @@ app=Flask(__name__)
 
 model=YOLO('runs/detect/train/weights/best.pt')
 
-cap=cv2.VideoCapture('http://172.18.9.163:8080/video')
+cap=cv2.VideoCapture('YOUR_OWN_IP_WEBCAM_IP')
 cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
 
 def generate_frames():
@@ -38,5 +38,6 @@ def generate_frames():
 def video_feed():
     return Response(generate_frames(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
+
 
 app.run(host='0.0.0.0',port=5000,threaded=True)
