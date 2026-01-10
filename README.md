@@ -265,14 +265,39 @@ Includes:
 * Best model weights (`best.pt`)
 
 ---
+.
+
+## 📊 Training Graphs & Metrics (Visuals)
+
+### 📉 Recall-Confidence Curve
+
+![Training Loss](runs/detect/train/BoxR_curve.png)
+
+### 📈 Precision–Confidence Curve
+
+![Precision Recall Curve](runs/detect/train/BoxP_curve.png)
+
+### 🎯 F1 Score-Confidence Curve
+
+![F1 Score Curve](runs/detect/train/BoxF1_curve.png)
+
+## 🧪 Model Prediction Results (Images)
+
+![Prediction Image 1](runs/detect/train/val_batch1_pred.jpg)
+---
 
 ## ✅ Features
 
 ✔ Custom dataset
+
 ✔ YOLO11n training
+
 ✔ Validation metrics
+
 ✔ Real-time webcam detection
+
 ✔ Mobile live streaming
+
 ✔ Lightweight & fast
 
 ---
